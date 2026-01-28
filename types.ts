@@ -10,7 +10,7 @@ export interface Question {
   id: string;
   number: number;
   text: string;
-  imageUrl?: string; // Optional image for the question
+  imageUrl?: string;
   options: Record<OptionKey, string>;
   correctAnswer: OptionKey;
   subject: Subject;
@@ -42,6 +42,7 @@ export interface SchoolSettings {
   motto: string;
   academicYear: string;
   logoUrl: string;
+  remoteSyncUrl?: string; // Tautan ke file JSON publik untuk update otomatis
 }
 
 export interface UserAnswers {
